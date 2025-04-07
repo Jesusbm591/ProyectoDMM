@@ -1,0 +1,92 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+.logo {
+  height: 14em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(3) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+@media (max-width: 600px) {
+  .logo {
+    height: 12em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+.card {
+  font-size: 1rem;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+.card:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.card:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.read-the-docs {
+  display: block;
+  font-size: 1rem;
+  color: #888;
+}
+.read-the-docs:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.read-the-docs:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+}
+.Header {
+  padding-top: -100px;
+}
+
+.wall-wrapper {
+  margin: 20px;
+  padding: 20px;
+  background-color: #1a1a1a; /* contenido oscuro */
+  box-shadow: 0 0 30px 15px rgba(231, 231, 92, 0.3); /* luz cálida amarilla */
+  border-radius: 12px;
+  max-width: 96%;
+  width: 100%;
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.wall-wrapper:hover {
+  box-shadow: 0 0 45px 20px rgba(255, 255, 100, 0.5); /* luz más intensa al pasar el mouse */
+}
+
+h1, p, button {
+  color: #fff;
+}

@@ -1,0 +1,89 @@
+/* Estilos generales */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Botón hamburguesa oculto por defecto */
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Menú estilo escritorio (horizontal) */
+  .nav {
+    display: flex;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ---------------------- */
+  /* Versión móvil */
+  @media (max-width: 600px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav {
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      padding: 20px;
+      transition: left 0.3s ease;
+      z-index: 3;
+    }
+  
+    .nav.open {
+      left: 0;
+    }
+  
+    .nav ul {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 2;
+    }
+  }
+  
