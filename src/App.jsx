@@ -30,7 +30,7 @@ function App() {
           </p>
         </div>
         <p className="read-the-docs">
-          Bienvenidos a Muebleria De Madera Mobiliario
+          Bienvenidos a Muebleria De Madera Muebles
         </p>
         </div>
       </>
