@@ -2,8 +2,6 @@ import React from "react";
 import '../App.css'
 import { useParams } from "react-router-dom";
 import Header from "./header";
-
-// Puedes mover esto a un archivo separado si prefieres
 const proyectos = [
     {
       id: "1",
@@ -22,7 +20,7 @@ const proyectos = [
         "https://via.placeholder.com/300x200?text=Proyecto+2+-+2",
       ],
     },
-    // Más proyectos...
+    
   ];
   
 
