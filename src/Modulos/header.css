@@ -70,10 +70,17 @@
   /* Versión móvil */
   @media (max-width: 600px) {
     .header {
-      flex-direction: row; /* mantener en fila */
-      align-items: start;
-      justify-content: space-between;
-      padding: 20;
+      flex-direction: row; /* Mantener en fila */
+      align-items: center; /* Alineación del contenido */
+      justify-content: flex-start; /* Alinea el contenido al inicio */
+      padding: 20px;
+    }
+  
+    /* Cambiar logo para que esté al final */
+    .logo {
+      max-height: 50px;
+      margin-left: auto; /* Empuja el logo hacia el final */
+      padding-left: 235px;
     }
   
     .menu-toggle {
@@ -87,7 +94,6 @@
       left: -250px;
       width: 250px;
       height: 100%;
-     
       transition: left 0.3s ease;
       z-index: 3;
       background-color: #242323 transparent;
@@ -112,12 +118,7 @@
       z-index: 2;
     }
   
-    .logo {
-      max-height: 50px;
-   
-    }
-
-    .carrucel{
+    .carrucel {
       width: 50%;
       height: auto;
     }
