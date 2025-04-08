@@ -1,42 +1,25 @@
-import { useState } from 'react'
+import { useState  } from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Modulos/header' 
+import Proyectos from './Modulos/proyectos';
+import Inicio from './Modulos/Inicio'
+
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div  className="wall-wrapper">
-
-    <>
-    <Header className='Header'/>
+    <Router>
     
-      <>
-      <div>
-        <div>
-          <a target="_blank">
-            <img src="https://res.cloudinary.com/dje0ep7ig/image/upload/v1744059590/photo_5161191930099511036_y_dk6bbb.jpg" className="logo" alt="React logo" />
-          </a>
-        </div>
-          <h1 className='h1'>
-          Muebleria DMM
-          </h1>
-        <div className="card">
-          <button>
-          Trabajos Realizados
-          </button>
-          <p>
-          Para ver mas información visita los modulos del sistema
-          </p>
-        </div>
-        <p className="read-the-docs">
-          Bienvenidos a Muebleria De Madera Muebles
-        </p>
-        </div>
-      </>
-    
-    </>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Inicio />} />
+      <Route path='Inicio' element={<Inicio/>}></Route>
+       < Route path="/proyectos" element={<Proyectos />} />
+     {/* <Route path="/contacto"element={<Contacto />} /> */}
+    </Routes>
+  </Router>
+  );
+  
 }
 export default App

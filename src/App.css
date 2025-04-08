@@ -1,20 +1,103 @@
-#root {
+.wall-wrapper {
+  background: repeating-linear-gradient(
+  45deg,
+  #8B5E3C,
+  #8B5E3C 10px,
+  #7A4B2C 10px,
+  #7A4B2C 20px
+);
+
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 1rem;
+  color: white;
+}
+
+
+.logo {
+  max-width: 15%;
+  height: auto;
+  display: block;
   margin: 0 auto;
+}
+
+
+.h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+
+.card {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  max-width: 600px;
   text-align: center;
 }
-.logo {
-  height: 14em;
-  will-change: filter;
-  transition: filter 300ms;
+
+
+.card button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #A0522D;
+  color: white;
 }
+
+
+.read-the-docs {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .card button {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .logo {
+    max-width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1 {
+    font-size: 1.2rem;
+  }
+
+  .card p,
+  .read-the-docs {
+    font-size: 0.9rem;
+  }
+}
+
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
-
 
 @keyframes logo-spin {
   from {
@@ -25,68 +108,14 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(3) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-@media (max-width: 600px) {
-  .logo {
-    height: 12em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
-  }
-  
-.card {
-  font-size: 1rem;
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-.card:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.card:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-.read-the-docs {
-  display: block;
-  font-size: 1rem;
-  color: #888;
-}
-.read-the-docs:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.read-the-docs:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-}
-.Header {
-  padding-top: -100px;
-}
-
-.wall-wrapper {
-  margin: 20px;
-  padding: 20px;
-  background-color: #1a1a1a; /* contenido oscuro */
-  box-shadow: 0 0 30px 15px rgba(231, 231, 92, 0.3); /* luz cálida amarilla */
-  border-radius: 12px;
-  max-width: 96%;
-  width: 100%;
-  text-align: center;
-  transition: box-shadow 0.3s ease-in-out;
-}
 
 .wall-wrapper:hover {
-  box-shadow: 0 0 45px 20px rgba(255, 255, 100, 0.5); /* luz más intensa al pasar el mouse */
+  box-shadow: 0 0 45px 20px rgba(22, 7, 226, 0.5); /* luz más intensa al pasar el mouse */
 }
 
-h1, p, button {
-  color: #fff;
-}
+
+
+
+
+
