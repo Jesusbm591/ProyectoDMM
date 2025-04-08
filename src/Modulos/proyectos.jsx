@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import Header from "./header";
-
+import { Link } from "react-router-dom";
 const proyectos = [
   {
     id: 1,
@@ -24,18 +24,15 @@ const Proyectos = () => {
   return (
     <div className="wall-wrapper">
       <Header />
-      <div className="Card">
-        <h1>Proyectos realizados 🙂</h1>
-        <div className="card-grid">
-          {proyectos.map((p) => (
-            <div className="image-card" key={p.id}>
-              <img src={p.image} alt={p.title} />
-              <h3>{p.title}</h3>
-            </div>
-          ))}
+      <div className="card-grid">
+        {proyectos.map((p) => (
+            <Link to={`/proyecto/${p.id}`} key={p.id} className="image-card">
+            <img src={p.image} alt={p.title} />
+            <h3>{p.title}</h3>
+            </Link>
+        ))}
         </div>
       </div>
-    </div>
   );
 };
 

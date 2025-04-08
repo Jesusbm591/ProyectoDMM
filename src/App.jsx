@@ -5,6 +5,7 @@ import Proyectos from './Modulos/proyectos';
 import Inicio from './Modulos/Inicio'
 
 import './App.css'
+import DetalleS from './Modulos/Detalles';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,9 +15,10 @@ function App() {
     
     <Routes>
       <Route path="/" element={<Inicio />} />
-      <Route path='Inicio' element={<Inicio/>}></Route>
+      <Route path='Inicio' element={<Inicio/>}/>
        < Route path="/proyectos" element={<Proyectos />} />
      {/* <Route path="/contacto"element={<Contacto />} /> */}
+     <Route path="/proyecto/:id" element={<DetalleS />} />
     </Routes>
   </Router>
   );
