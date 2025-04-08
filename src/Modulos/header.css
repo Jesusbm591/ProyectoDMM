@@ -1,35 +1,32 @@
 .header {
   display: flex;
-  flex-direction: column;
-  justify-content: center; /* centra verticalmente en columna */
-  align-items: center;     /* centra horizontalmente */
-  color: white;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  align-items: center;
+  justify-content: space-between; /* espacio entre inicio, centro y final */
+  padding: 20px;
   position: relative;
   z-index: 2;
-  text-align: center;
+}
+.logo {
+  max-height: 90px; /* controla el tamaño */
+  height: auto;
+  width: auto;
+  
 }
 
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  /* Botón hamburguesa oculto por defecto */
-  .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-  }
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
   
   /* Menú estilo escritorio (horizontal) */
   .nav {
+    flex-grow: 1; /* que ocupe todo el espacio disponible */
     display: flex;
-    
+    justify-content: center; /* centrar menú */
   }
   .nav ul {
     list-style: none;
@@ -43,7 +40,7 @@
   .nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     
   }
   
@@ -57,27 +54,28 @@
   /* ---------------------- */
   /* Versión móvil */
   @media (max-width: 600px) {
+    .header {
+      flex-direction: row; /* mantener en fila */
+      align-items: start;
+      justify-content: space-between;
+      padding: 20;
+    }
+  
     .menu-toggle {
       display: block;
     }
-    .header {
-      justify-content: start; 
-      align-items: start; 
-      padding-top: 5px;
-      padding-bottom: 15px;
-      font-size: 2rem;
-    }
+  
     .nav {
-      flex-direction: column;
       position: fixed;
+      flex-direction: column;
       top: 0;
       left: -250px;
       width: 250px;
       height: 100%;
-      padding: 20px;
+     
       transition: left 0.3s ease;
       z-index: 3;
-      
+      background-color: #242323 transparent;
     }
   
     .nav.open {
@@ -87,7 +85,6 @@
     .nav ul {
       flex-direction: column;
       gap: 20px;
-      
     }
   
     .overlay {
@@ -99,5 +96,9 @@
       background: rgba(0,0,0,0.5);
       z-index: 2;
     }
-  }
   
+    .logo {
+      max-height: 50px;
+   
+    }
+  }
