@@ -80,7 +80,7 @@
     .logo {
       max-height: 50px;
       margin-left: auto; /* Empuja el logo hacia el final */
-      padding-left: 220px;
+      padding-left: 200px;
     }
   
     .menu-toggle {
