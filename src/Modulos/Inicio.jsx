@@ -14,13 +14,13 @@ const Inicio = ()=>{
                 
                 <h1 className="h1">Carpinteria DMM</h1>
                 <Carousel autoPlay infiniteLoop showThumbs={false}>
-                <div>
+                <div className="carrucel">
                     <img src="https://res.cloudinary.com/dje0ep7ig/image/upload/v1744145629/photo_5163914101846552212_y_uv47gk.jpg" alt="1" />
                 </div>
-                <div>
+                <div className="carrucel">
                     <img src="https://res.cloudinary.com/dje0ep7ig/image/upload/v1744145629/photo_5163914101846552211_y_xgopy7.jpg" alt="2" />
                 </div>
-                <div>
+                <div className="carrucel">
                     <img src="https://res.cloudinary.com/dje0ep7ig/image/upload/v1744145629/photo_5163914101846552213_y_q8gchq.jpg" alt="3" />
                 </div>
         </Carousel>

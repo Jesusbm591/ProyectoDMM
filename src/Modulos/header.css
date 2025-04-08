@@ -13,6 +13,21 @@
   
 }
 
+.carrucel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 300px; /* O cualquier tamaño máximo que prefieras */
+  margin: 0 auto; /* Centrado del carrusel */
+}
+
+.carrucel img {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Asegura que la imagen no exceda el tamaño del contenedor */
+}
+
 .menu-toggle {
   display: none;
   font-size: 2rem;
@@ -100,5 +115,10 @@
     .logo {
       max-height: 50px;
    
+    }
+
+    .carrucel{
+      width: 50%;
+      height: auto;
     }
   }
