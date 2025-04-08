@@ -31,7 +31,6 @@
     display: flex;
     
   }
-  
   .nav ul {
     list-style: none;
     display: flex;
@@ -52,6 +51,9 @@
     text-decoration: underline;
   }
   
+  .nav :hover{
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
   /* ---------------------- */
   /* Versión móvil */
   @media (max-width: 600px) {
@@ -60,10 +62,10 @@
     }
     .header {
       justify-content: start; 
-  align-items: start; 
+      align-items: start; 
       padding-top: 5px;
       padding-bottom: 15px;
-     
+      font-size: 2rem;
     }
     .nav {
       flex-direction: column;
@@ -85,6 +87,7 @@
     .nav ul {
       flex-direction: column;
       gap: 20px;
+      
     }
   
     .overlay {

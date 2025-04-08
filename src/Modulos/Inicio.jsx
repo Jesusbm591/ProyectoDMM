@@ -16,7 +16,7 @@ const Inicio = ()=>{
                     />
                 </a>
                 </div>
-                <h1 className="h1">Muebleria DMM</h1>
+                <h1 className="h1">Carpinteria DMM</h1>
                 <div className="card">
                 <button>Trabajos Realizados</button>
                 <p>Para ver más información visita los módulos del sistema</p>
@@ -25,7 +25,5 @@ const Inicio = ()=>{
             </div>
         </div>
     );
-
 }
-
 export default Inicio;

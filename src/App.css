@@ -111,7 +111,7 @@
 
 
 .wall-wrapper:hover {
-  box-shadow: 0 0 45px 20px rgba(22, 7, 226, 0.5); /* luz más intensa al pasar el mouse */
+  box-shadow: 0 0 45px 20px rgba(230, 255, 1, 0.5); /* luz más intensa al pasar el mouse */
 }
 
 
