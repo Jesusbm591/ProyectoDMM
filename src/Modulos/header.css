@@ -59,7 +59,8 @@
       display: block;
     }
     .header {
-      
+      justify-content: start; 
+  align-items: start; 
       padding-top: 5px;
       padding-bottom: 15px;
      
