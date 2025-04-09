@@ -16,15 +16,28 @@ const proyectos = [
       id: "2",
       title: "Closet de madera",
       images: [
-        "https://via.placeholder.com/300x200?text=Proyecto+2+-+1",
+        "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744150908/photo_5163914101846552219_y_iy7n7y.jpg",
         "https://via.placeholder.com/300x200?text=Proyecto+2+-+2",
       ],
     },
-    
+    {
+      id: "3",
+      title: "Centro de entretenimiento",
+      images: [
+        "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744150907/photo_5163914101846552227_y_uaw1ug.jpg",
+        "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744150906/photo_5163914101846552233_y_whm9te.jpg",
+      ],
+    },
+    {
+      id: "4",
+      title: "Otros Proyectos",
+      images: [
+        "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744219724/photo_5163914101846552243_y_z0gqcs.jpg",
+        "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744219723/photo_5163914101846552234_y_xvacqb.jpg",
+      ],
+    },
   ];
   
-
-
   const Detalle = () => {
     const { id } = useParams();
     const proyecto = proyectos.find((p) => p.id === id);
@@ -32,7 +45,6 @@ const proyectos = [
     if (!proyecto) {
       return <p>Proyecto no encontrado</p>;
     }
-  
     return (
       <div className="wall-wrapper">
         <Header />
@@ -45,6 +57,4 @@ const proyectos = [
       </div>
     );
   };
-  
-
 export default Detalle;

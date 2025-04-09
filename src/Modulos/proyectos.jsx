@@ -10,14 +10,19 @@ const proyectos = [
   },
   {
     id: 2,
-    title: "Closet de madera",
+    title: "Closets",
     image: "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744150907/photo_5163914101846552226_y_mns6gu.jpg",
   },
   {
     id: 3,
-    title: "Entretenimiento",
+    title: "Centro de entretenimiento",
     image: "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744150907/photo_5163914101846552227_y_uaw1ug.jpg",
   },
+  {
+    id:4,
+    title: "Otros Trabajos",
+    image: "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744219723/photo_5163914101846552234_y_xvacqb.jpg",
+  }
 ];
 
 const Proyectos = () => {
@@ -25,7 +30,7 @@ const Proyectos = () => {
     <div className="wall-wrapper">
       <Header />
       <div className="card-grid">
-        {proyectos.map((p) => (
+        {proyectos.map((p) => ( 
             <Link to={`/proyecto/${p.id}`} key={p.id} className="image-card">
             <img src={p.image} alt={p.title} />
             <h3>{p.title}</h3>
