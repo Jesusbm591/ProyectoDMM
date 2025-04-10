@@ -1,9 +1,11 @@
 import React from "react";
 import '../App.css'
+import Header from "./header";
 const Contacto = () => {
     return(
         <>
         <div className="wall-wrapper">
+            <Header />
             <h1>
                 Contacto
             </h1>

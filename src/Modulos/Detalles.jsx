@@ -14,7 +14,7 @@ const proyectos = [
     },
     {
       id: "2",
-      title: "Closet de madera",
+      title: "Closets",
       images: [
         "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744150908/photo_5163914101846552219_y_iy7n7y.jpg",
         "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744306470/photo_5163914101846552238_y_kyae94.jpg",
