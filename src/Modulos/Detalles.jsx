@@ -25,7 +25,6 @@ const proyectos = [
         "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744307226/photo_5163914101846552231_y_mwk4ek.jpg",
         "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744307226/photo_5163914101846552239_y_rggniv.jpg",
         "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744307227/photo_5163914101846552244_y_a9wgrq.jpg"
-
       ],
     },
     {

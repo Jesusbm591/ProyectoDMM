@@ -107,9 +107,9 @@
   }
 }
 
-.wall-wrapper:hover {
-  box-shadow: 0 0 45px 20px rgba(230, 255, 1, 0.5); /* luz más intensa al pasar el mouse */
-}
+/* .wall-wrapper:hover {
+  box-shadow: 0 0 45px 20px rgba(230, 255, 1, 0.5); /* luz más intensa al pasar el mouse 
+*/
 /*Estilos vita proyectos*/
 .card-grid {
   display: grid;
@@ -180,4 +180,81 @@
 .href{
   text-decoration: none;
   color: black;
+}
+
+/*Estilos contacto*/
+
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.contact-number {
+  font-size: 1.5rem;
+  color: #008CBA;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+h4 {
+  font-size: 1.3rem;
+  color: #444;
+  margin-top: 20px;
+}
+
+.contact-form {
+  margin-top: 30px;
+  display: inline-block;
+  text-align: left;
+  max-width: 500px;
+  width: 75%;
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #007B9D;
 }

@@ -11,7 +11,6 @@ const Inicio = ()=>{
         <div className="wall-wrapper">
             <Header className="Header" />
             <div>
-                
                 <h1 className="h1">Carpinteria DMM</h1>
                 <Carousel autoPlay infiniteLoop showThumbs={false}>
                     <div className="carrucel">
