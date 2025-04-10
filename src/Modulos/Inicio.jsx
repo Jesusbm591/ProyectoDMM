@@ -31,7 +31,7 @@ const Inicio = ()=>{
                 <button><a href="/Proyectos" className="href">Trabajos Realizados</a></button>
                 <p>Para ver más información visita los módulos del sistema</p>
                 </div>
-                <p className="read-the-docs">Bienvenidos a Mueblería De Madera Muebles</p>
+                <p className="read-the-docs">Bienvenidos a Carpinteria De Madera Muebles</p>
             </div>
         </div>
     );
