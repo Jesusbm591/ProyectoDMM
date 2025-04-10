@@ -3,20 +3,6 @@ import '../App.css';
 import Header from "./header";
 
 const Contacto = () => {
-    const handleSubmit = (e) => {
-        e.preventDefault(); // evita el recargo de la página
-
-        const formData = new FormData(e.target);
-        const data = {
-            nombre: formData.get("name"),
-            email: formData.get("email"),
-            mensaje: formData.get("message")
-        };
-
-        console.log("Datos enviados:", data);
-        alert("Formulario enviado. Revisa la consola del navegador.");
-    };
-
     return (
         <div className="wall-wrapper">
             <Header />
@@ -26,7 +12,7 @@ const Contacto = () => {
             
             <h4>O contáctanos directamente a través del siguiente formulario:</h4>
             
-            <form className="contact-form" onSubmit={handleSubmit}>
+            <form className="contact-form">
                 <div className="form-group">
                     <label htmlFor="name">Nombre:</label>
                     <input type="text" id="name" name="name" placeholder="Tu nombre" required />
@@ -37,12 +23,12 @@ const Contacto = () => {
                 </div>
                 <div className="form-group">
                     <label htmlFor="message">Mensaje:</label>
-                    <textarea id="message" name="message" placeholder="Escribe tu mensaje..." required></textarea>
+                    <textarea id="message" name="message" placeholder="Escribe tu mensaje..."  required></textarea>
                 </div>
                 <button type="submit" className="submit-btn">Enviar</button>
             </form>
         </div>
     );
-};
+}
 
 export default Contacto;
