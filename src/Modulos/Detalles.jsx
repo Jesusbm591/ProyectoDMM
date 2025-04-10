@@ -17,7 +17,10 @@ const proyectos = [
       title: "Closet de madera",
       images: [
         "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744150908/photo_5163914101846552219_y_iy7n7y.jpg",
-        "https://via.placeholder.com/300x200?text=Proyecto+2+-+2",
+        "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744306470/photo_5163914101846552238_y_kyae94.jpg",
+        "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744306470/photo_5165735176569991054_y_s5wvqa.jpg",
+        "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744306470/photo_5163914101846552235_y_xgtfmi.jpg",
+        "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744306470/photo_5163914101846552224_y_aycmts.jpg"
       ],
     },
     {
@@ -26,6 +29,7 @@ const proyectos = [
       images: [
         "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744150907/photo_5163914101846552227_y_uaw1ug.jpg",
         "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744150906/photo_5163914101846552233_y_whm9te.jpg",
+        "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744306470/photo_5163914101846552237_y_yaxp2s.jpg"
       ],
     },
     {
@@ -34,6 +38,7 @@ const proyectos = [
       images: [
         "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744219724/photo_5163914101846552243_y_z0gqcs.jpg",
         "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744219723/photo_5163914101846552234_y_xvacqb.jpg",
+        "https://res.cloudinary.com/dje0ep7ig/image/upload/v1744306470/photo_5165735176569991056_y_knhraq.jpg"
       ],
     },
   ];

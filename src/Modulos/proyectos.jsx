@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 import Header from "./header";
 import { Link } from "react-router-dom";
-const proyectos = [
+const proyectos = [ 
   {
     id: 1,
     title: "Mueble de cocina",

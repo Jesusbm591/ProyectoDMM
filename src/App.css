@@ -14,7 +14,6 @@
   color: rgb(14, 14, 14);
 }
 
-
 .logo {
   max-width: 15%;
   height: auto;
@@ -108,14 +107,9 @@
   }
 }
 
-
-
 .wall-wrapper:hover {
   box-shadow: 0 0 45px 20px rgba(230, 255, 1, 0.5); /* luz más intensa al pasar el mouse */
 }
-
-
-
 /*Estilos vita proyectos*/
 .card-grid {
   display: grid;
@@ -165,8 +159,6 @@
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
-
-
 .carrucel {
   position: relative;
 }
