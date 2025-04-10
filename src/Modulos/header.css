@@ -96,7 +96,7 @@
       height: 100%;
       transition: left 0.3s ease;
       z-index: 3;
-      background-color: #363636 ;
+      background-color: #cfcfcf ;
     }
   
     .nav.open {
