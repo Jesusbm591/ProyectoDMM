@@ -261,31 +261,12 @@ textarea {
   gap: 1rem;
 }
 
-.detalle-imagenes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
 
-.image-card {
-  width: 300px;
-  background-color: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
 
 .image-card img {
   width: 100%;
-  height: 500px; /* Altura fija */
+  height: 350px; /* Altura fija */
    /* Mantiene proporción y recorta */
   display: block;
 }
 
-.image-card p {
-  padding: 0.5rem;
-  font-size: 14px;
-  color: #333;
-}
