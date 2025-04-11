@@ -20,9 +20,6 @@ const proyectos = [
         descripcion: "Mueble instalado en cocina real"
       }
     ],
-    descripcion: [
-      "Tiempo de elaboración aproximadamente 15 días, elaborado con tabla roca de encino"
-    ]
   },
   {
     id: "2",
@@ -65,9 +62,6 @@ const proyectos = [
         descripcion: "Acabado final del closet"
       }
     ],
-    descripcion: [
-      "Tiempo de elaboración aproximadamente 15 días, elaborado con tabla roca de encino"
-    ]
   },
   {
     id: "3",
@@ -86,9 +80,6 @@ const proyectos = [
         descripcion: "Detalle del espacio para TV"
       }
     ],
-    descripcion: [
-      "Tiempo de elaboración aproximadamente 15 días, elaborado con tabla roca de encino"
-    ]
   },
   {
     id: "4",
@@ -111,9 +102,6 @@ const proyectos = [
         descripcion: "Vista general del proyecto"
       }
     ],
-    descripcion: [
-      "Tiempo de elaboración aproximadamente 15 días, elaborado con tabla roca de encino"
-    ]
   }
 ];
 
@@ -130,13 +118,13 @@ const proyectos = [
         <Header />
         <h1>{proyecto.title}</h1>
         <div className="detalle-imagenes">
-          {proyecto.images.map((img, index) => (
-            <div key={index} className="image-card">
-              <img src={img.url} alt={`Imagen ${index + 1}`} />
-              <p>{img.descripcion}</p>
-            </div>
-          ))}
-        </div>
+        {proyecto.images.map((img, index) => (
+          <div key={index} className="image-container">
+            <img src={img.url} alt={`Imagen ${index + 1}`} />
+            <p>{img.descripcion}</p>
+          </div>
+        ))}
+      </div>
       </div>
     );
   };
